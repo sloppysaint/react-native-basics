@@ -17,9 +17,9 @@ const app = () => {
         resizeMode="cover"
       >
         <Text style={styles.title}>coffee shop</Text>
-        <Link href="/explore" style={{marginHorizontal: 'auto'}} asChild>
+        <Link href="/contact" style={{marginHorizontal: 'auto'}} asChild>
           <Pressable style={styles.button}>
-            <Text>Explore</Text>
+            <Text style = {styles.buttonText}>Contact Us</Text>
           </Pressable>
         </Link>
       </ImageBackground>
@@ -60,5 +60,22 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     marginBottom: 10,
     textAlign: "center",
+  },
+  buttonText: {
+    color: "white",
+    fontWeight: "bold",
+    fontSize: 18,
+    padding: 4,
+    fontWeight: "bold",
+    textAlign: "center",
+  },
+  button: {
+    height: 60,
+    borderRadius: 20,
+    textAlign: "center",
+    backgroundColor: "rgba(0,0,0,0.75)",
+    padding: 10,
+    justifyContent: "center",
+
   },
 });
